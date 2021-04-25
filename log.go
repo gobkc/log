@@ -19,7 +19,7 @@ func Println(param ...interface{}) {
 	newParam := append([]interface{}{}, 0x1B, time.Now().Local().Format("2006-01-02 03:04:05"))
 	newParam = append(newParam, param...)
 	newParam = append(newParam, 0x1B)
-	fmt.Printf("%c[0;30;38m["+Prefix+"]%s "+strings.Repeat("%v ", pLen)+"%c[0m\n", newParam...)
+	fmt.Printf("%c[0;37;38m["+Prefix+"]%s "+strings.Repeat("%v ", pLen)+"%c[0m\n", newParam...)
 }
 
 //Fatalln 打印行
