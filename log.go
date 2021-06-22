@@ -8,7 +8,7 @@ import (
 )
 
 //Prefix LOG前缀
-const Prefix = "CLOUD-PROXY"
+var Prefix = "GIN-DEBUG"
 
 //Println 打印行
 func Println(param ...interface{}) {
